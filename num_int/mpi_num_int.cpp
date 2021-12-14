@@ -33,7 +33,7 @@ int main (int argc, char* argv[])
     int intensity = atoi(argv[5]);
 
     int rank, size;
-    int globalResult = 0.0;
+    double globalResult = 0.0;
 
     switch(atoi(argv[1]))
     {
@@ -89,7 +89,7 @@ int main (int argc, char* argv[])
 
     if(rank == 0)
     {
-        std::cout<<globalResult<<std::endl;
+        std::cout<<ceil(globalResult)<<std::endl;
         std::cerr<<elapsed_seconds.count()<<std::endl;
     }
 
