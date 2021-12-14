@@ -63,7 +63,7 @@ int main (int argc, char* argv[])
     int temp2 = rank * temp1;
     int last = (rank + 1) * temp1;
     if (rank == size - 1)
-        arrEnd = n;
+  
 
     double temp3 = 0.0;
     for (int x = temp2; x < last; ++x)
