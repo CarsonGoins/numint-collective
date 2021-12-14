@@ -62,8 +62,6 @@ int main (int argc, char* argv[])
     int chunkSize = n / size;
     int beg = rank * chunkSize;
     int last = (rank + 1) * chunkSize;
-    if (rank == size - 1)
-        arrEnd = n;
 
     double localres = 0.0;
     for (int x = beg; x < last; ++x)
