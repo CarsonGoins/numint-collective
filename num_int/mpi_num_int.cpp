@@ -33,7 +33,7 @@ int main (int argc, char* argv[])
     int intensity = atoi(argv[5]);
 
     int rank, size;
-    double globalResult = 0.0;
+    int globalResult = 0.0;
 
     switch(atoi(argv[1]))
     {
